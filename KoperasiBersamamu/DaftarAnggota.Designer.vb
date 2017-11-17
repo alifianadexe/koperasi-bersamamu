@@ -23,6 +23,11 @@ Partial Class DaftarAnggota
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txt_tanggal_lahir = New System.Windows.Forms.DateTimePicker()
+        Me.txt_jenis_kel_2 = New System.Windows.Forms.RadioButton()
+        Me.txt_jenis_kel = New System.Windows.Forms.RadioButton()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txt_alamat = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txt_tempat_lahir = New System.Windows.Forms.TextBox()
@@ -32,18 +37,13 @@ Partial Class DaftarAnggota
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txt_id = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.btn_daftar = New System.Windows.Forms.Button()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.txt_alamat = New System.Windows.Forms.TextBox()
-        Me.txt_jenis_kel = New System.Windows.Forms.RadioButton()
-        Me.txt_jenis_kel_2 = New System.Windows.Forms.RadioButton()
-        Me.txt_tanggal_lahir = New System.Windows.Forms.DateTimePicker()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.txt_username = New System.Windows.Forms.TextBox()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.txt_password = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.txt_re_password = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txt_password = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txt_username = New System.Windows.Forms.TextBox()
+        Me.btn_daftar = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -70,6 +70,56 @@ Partial Class DaftarAnggota
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Data Diri"
         '
+        'txt_tanggal_lahir
+        '
+        Me.txt_tanggal_lahir.Enabled = False
+        Me.txt_tanggal_lahir.Location = New System.Drawing.Point(86, 127)
+        Me.txt_tanggal_lahir.Name = "txt_tanggal_lahir"
+        Me.txt_tanggal_lahir.Size = New System.Drawing.Size(200, 20)
+        Me.txt_tanggal_lahir.TabIndex = 14
+        '
+        'txt_jenis_kel_2
+        '
+        Me.txt_jenis_kel_2.AutoSize = True
+        Me.txt_jenis_kel_2.Enabled = False
+        Me.txt_jenis_kel_2.Location = New System.Drawing.Point(182, 78)
+        Me.txt_jenis_kel_2.Name = "txt_jenis_kel_2"
+        Me.txt_jenis_kel_2.Size = New System.Drawing.Size(79, 17)
+        Me.txt_jenis_kel_2.TabIndex = 13
+        Me.txt_jenis_kel_2.TabStop = True
+        Me.txt_jenis_kel_2.Text = "Perempuan"
+        Me.txt_jenis_kel_2.UseVisualStyleBackColor = True
+        '
+        'txt_jenis_kel
+        '
+        Me.txt_jenis_kel.AutoSize = True
+        Me.txt_jenis_kel.Enabled = False
+        Me.txt_jenis_kel.Location = New System.Drawing.Point(86, 78)
+        Me.txt_jenis_kel.Name = "txt_jenis_kel"
+        Me.txt_jenis_kel.Size = New System.Drawing.Size(74, 17)
+        Me.txt_jenis_kel.TabIndex = 12
+        Me.txt_jenis_kel.TabStop = True
+        Me.txt_jenis_kel.Text = "Laki - Laki"
+        Me.txt_jenis_kel.UseVisualStyleBackColor = True
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(6, 156)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(39, 13)
+        Me.Label6.TabIndex = 11
+        Me.Label6.Text = "Alamat"
+        '
+        'txt_alamat
+        '
+        Me.txt_alamat.Enabled = False
+        Me.txt_alamat.Location = New System.Drawing.Point(86, 153)
+        Me.txt_alamat.Multiline = True
+        Me.txt_alamat.Name = "txt_alamat"
+        Me.txt_alamat.Size = New System.Drawing.Size(205, 78)
+        Me.txt_alamat.TabIndex = 10
+        '
         'Label5
         '
         Me.Label5.AutoSize = True
@@ -90,6 +140,7 @@ Partial Class DaftarAnggota
         '
         'txt_tempat_lahir
         '
+        Me.txt_tempat_lahir.Enabled = False
         Me.txt_tempat_lahir.Location = New System.Drawing.Point(86, 101)
         Me.txt_tempat_lahir.Name = "txt_tempat_lahir"
         Me.txt_tempat_lahir.Size = New System.Drawing.Size(200, 20)
@@ -115,6 +166,7 @@ Partial Class DaftarAnggota
         '
         'txt_nama
         '
+        Me.txt_nama.Enabled = False
         Me.txt_nama.Location = New System.Drawing.Point(86, 49)
         Me.txt_nama.Name = "txt_nama"
         Me.txt_nama.Size = New System.Drawing.Size(205, 20)
@@ -131,6 +183,7 @@ Partial Class DaftarAnggota
         '
         'txt_id
         '
+        Me.txt_id.Enabled = False
         Me.txt_id.Location = New System.Drawing.Point(86, 23)
         Me.txt_id.Name = "txt_id"
         Me.txt_id.Size = New System.Drawing.Size(75, 20)
@@ -151,76 +204,22 @@ Partial Class DaftarAnggota
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Account Login"
         '
-        'btn_daftar
+        'Label9
         '
-        Me.btn_daftar.Location = New System.Drawing.Point(416, 165)
-        Me.btn_daftar.Name = "btn_daftar"
-        Me.btn_daftar.Size = New System.Drawing.Size(175, 64)
-        Me.btn_daftar.TabIndex = 2
-        Me.btn_daftar.Text = "Daftar"
-        Me.btn_daftar.UseVisualStyleBackColor = True
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(8, 79)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(76, 13)
+        Me.Label9.TabIndex = 20
+        Me.Label9.Text = "Re - Password"
         '
-        'Label6
+        'txt_re_password
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(6, 156)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(39, 13)
-        Me.Label6.TabIndex = 11
-        Me.Label6.Text = "Alamat"
-        '
-        'txt_alamat
-        '
-        Me.txt_alamat.Location = New System.Drawing.Point(86, 153)
-        Me.txt_alamat.Multiline = True
-        Me.txt_alamat.Name = "txt_alamat"
-        Me.txt_alamat.Size = New System.Drawing.Size(205, 78)
-        Me.txt_alamat.TabIndex = 10
-        '
-        'txt_jenis_kel
-        '
-        Me.txt_jenis_kel.AutoSize = True
-        Me.txt_jenis_kel.Location = New System.Drawing.Point(86, 78)
-        Me.txt_jenis_kel.Name = "txt_jenis_kel"
-        Me.txt_jenis_kel.Size = New System.Drawing.Size(74, 17)
-        Me.txt_jenis_kel.TabIndex = 12
-        Me.txt_jenis_kel.TabStop = True
-        Me.txt_jenis_kel.Text = "Laki - Laki"
-        Me.txt_jenis_kel.UseVisualStyleBackColor = True
-        '
-        'txt_jenis_kel_2
-        '
-        Me.txt_jenis_kel_2.AutoSize = True
-        Me.txt_jenis_kel_2.Location = New System.Drawing.Point(182, 78)
-        Me.txt_jenis_kel_2.Name = "txt_jenis_kel_2"
-        Me.txt_jenis_kel_2.Size = New System.Drawing.Size(79, 17)
-        Me.txt_jenis_kel_2.TabIndex = 13
-        Me.txt_jenis_kel_2.TabStop = True
-        Me.txt_jenis_kel_2.Text = "Perempuan"
-        Me.txt_jenis_kel_2.UseVisualStyleBackColor = True
-        '
-        'txt_tanggal_lahir
-        '
-        Me.txt_tanggal_lahir.Location = New System.Drawing.Point(86, 127)
-        Me.txt_tanggal_lahir.Name = "txt_tanggal_lahir"
-        Me.txt_tanggal_lahir.Size = New System.Drawing.Size(200, 20)
-        Me.txt_tanggal_lahir.TabIndex = 14
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(10, 29)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(55, 13)
-        Me.Label7.TabIndex = 16
-        Me.Label7.Text = "Username"
-        '
-        'txt_username
-        '
-        Me.txt_username.Location = New System.Drawing.Point(88, 26)
-        Me.txt_username.Name = "txt_username"
-        Me.txt_username.Size = New System.Drawing.Size(184, 20)
-        Me.txt_username.TabIndex = 15
+        Me.txt_re_password.Enabled = False
+        Me.txt_re_password.Location = New System.Drawing.Point(88, 76)
+        Me.txt_re_password.Name = "txt_re_password"
+        Me.txt_re_password.Size = New System.Drawing.Size(186, 20)
+        Me.txt_re_password.TabIndex = 19
         '
         'Label8
         '
@@ -233,32 +232,43 @@ Partial Class DaftarAnggota
         '
         'txt_password
         '
+        Me.txt_password.Enabled = False
         Me.txt_password.Location = New System.Drawing.Point(88, 50)
         Me.txt_password.Name = "txt_password"
         Me.txt_password.Size = New System.Drawing.Size(186, 20)
         Me.txt_password.TabIndex = 17
         '
-        'Label9
+        'Label7
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(8, 79)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(76, 13)
-        Me.Label9.TabIndex = 20
-        Me.Label9.Text = "Re - Password"
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(10, 29)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(55, 13)
+        Me.Label7.TabIndex = 16
+        Me.Label7.Text = "Username"
         '
-        'txt_re_password
+        'txt_username
         '
-        Me.txt_re_password.Location = New System.Drawing.Point(88, 76)
-        Me.txt_re_password.Name = "txt_re_password"
-        Me.txt_re_password.Size = New System.Drawing.Size(186, 20)
-        Me.txt_re_password.TabIndex = 19
+        Me.txt_username.Enabled = False
+        Me.txt_username.Location = New System.Drawing.Point(88, 26)
+        Me.txt_username.Name = "txt_username"
+        Me.txt_username.Size = New System.Drawing.Size(184, 20)
+        Me.txt_username.TabIndex = 15
+        '
+        'btn_daftar
+        '
+        Me.btn_daftar.Location = New System.Drawing.Point(416, 179)
+        Me.btn_daftar.Name = "btn_daftar"
+        Me.btn_daftar.Size = New System.Drawing.Size(175, 64)
+        Me.btn_daftar.TabIndex = 2
+        Me.btn_daftar.Text = "Daftar"
+        Me.btn_daftar.UseVisualStyleBackColor = True
         '
         'DaftarAnggota
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(685, 281)
+        Me.ClientSize = New System.Drawing.Size(638, 280)
         Me.Controls.Add(Me.btn_daftar)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)

@@ -28,7 +28,7 @@ Partial Class ManagementJabatan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(424, 219)
+        Me.ClientSize = New System.Drawing.Size(345, 504)
         Me.Name = "ManagementJabatan"
         Me.Text = "ManagementJabatan"
         Me.ResumeLayout(False)

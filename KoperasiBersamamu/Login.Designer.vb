@@ -22,60 +22,35 @@ Partial Class Login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txt_username = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txt_password = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'txt_username
         '
-        Me.TextBox1.Location = New System.Drawing.Point(83, 19)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(195, 20)
-        Me.TextBox1.TabIndex = 0
+        Me.txt_username.Location = New System.Drawing.Point(83, 19)
+        Me.txt_username.Name = "txt_username"
+        Me.txt_username.Size = New System.Drawing.Size(195, 20)
+        Me.txt_username.TabIndex = 0
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.txt_password)
+        Me.GroupBox1.Controls.Add(Me.txt_username)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(400, 77)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Login"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(83, 45)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(195, 20)
-        Me.TextBox2.TabIndex = 1
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(22, 22)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(55, 13)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Username"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(22, 48)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(53, 13)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Password"
         '
         'Button1
         '
@@ -88,6 +63,31 @@ Partial Class Login
         Me.Button1.TabIndex = 4
         Me.Button1.Text = "Login"
         Me.Button1.UseVisualStyleBackColor = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(22, 48)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(53, 13)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "Password"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(22, 22)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(55, 13)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "Username"
+        '
+        'txt_password
+        '
+        Me.txt_password.Location = New System.Drawing.Point(83, 45)
+        Me.txt_password.Name = "txt_password"
+        Me.txt_password.Size = New System.Drawing.Size(195, 20)
+        Me.txt_password.TabIndex = 1
         '
         'Login
         '
@@ -103,10 +103,10 @@ Partial Class Login
 
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txt_username As TextBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txt_password As TextBox
     Friend WithEvents Button1 As Button
 End Class

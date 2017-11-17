@@ -20,6 +20,30 @@
         Return connString
     End Function
 
+    Public Function cekUsername(ByVal username As String)
+        Dim sql As String = "SELECT * FROM tbl_anggota WHERE username = '" + username + "'"
+        Dim cmnd As New SqlClient.SqlCommand(sql, conn)
+        rd = cmnd.ExecuteReader
+        rd.Read()
+
+        If rd.HasRows Then
+            Return False
+        End If
+        rd.Close()
+        Return True
+    End Function
+
+    Public Function cekEmptyBox(ParamArray ByVal obj() As Object)
+        For i As Integer = 0 To UBound(obj)
+            If obj(i).Text = "" Then
+                MessageBox.Show("Isi semua kolom yang tersedia!", "Warn", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                Return False
+
+            End If
+        Next
+        Return True
+    End Function
+
     Public Function generateID(ByVal what As String, ByVal conn As SqlClient.SqlConnection)
         Dim id As String = ""
 

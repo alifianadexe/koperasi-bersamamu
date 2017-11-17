@@ -1,1 +1,14 @@
 C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\bin\Debug\KoperasiBersamamu.exe.config
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.vbprojResolveAssemblyReference.cache
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.ManagementJabatan.resources
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.DaftarAnggota.resources
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.Login.resources
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.MainForm.resources
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.Resources.resources
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.vbproj.GenerateResource.Cache
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.xml
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\bin\Debug\KoperasiBersamamu.exe
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\bin\Debug\KoperasiBersamamu.pdb
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\bin\Debug\KoperasiBersamamu.xml
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.exe
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.pdb
