@@ -12,3 +12,5 @@ C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersa
 C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\bin\Debug\KoperasiBersamamu.xml
 C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.exe
 C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.pdb
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.NavigationAdmin.resources
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.ManagementAnggota.resources

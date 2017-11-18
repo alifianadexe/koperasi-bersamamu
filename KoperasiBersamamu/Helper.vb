@@ -20,14 +20,16 @@
         Return connString
     End Function
 
-    Public Function cekUsername(ByVal username As String)
+    Public Function cekUsername(ByVal username As String, ByVal conn As SqlClient.SqlConnection)
         Dim sql As String = "SELECT * FROM tbl_anggota WHERE username = '" + username + "'"
         Dim cmnd As New SqlClient.SqlCommand(sql, conn)
         rd = cmnd.ExecuteReader
         rd.Read()
 
         If rd.HasRows Then
+            rd.Close()
             Return False
+
         End If
         rd.Close()
         Return True
@@ -45,11 +47,11 @@
     End Function
 
     Public Function generateID(ByVal what As String, ByVal conn As SqlClient.SqlConnection)
-        Dim id As String = ""
+        Dim id As String = what
 
         Select Case what
             Case "id_anggota"
-                Dim sql As String = "SELECT " + id + " FROM tbl_anggota ORDER BY " + id + " DESC"
+                Dim sql As String = "SELECT * FROM tbl_anggota ORDER BY " + id + " DESC"
                 Dim cmnd As New SqlClient.SqlCommand(sql, conn)
                 rd = cmnd.ExecuteReader
                 rd.Read()

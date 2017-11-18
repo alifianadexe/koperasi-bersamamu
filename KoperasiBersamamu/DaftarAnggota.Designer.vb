@@ -44,6 +44,7 @@ Partial Class DaftarAnggota
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txt_username = New System.Windows.Forms.TextBox()
         Me.btn_daftar = New System.Windows.Forms.Button()
+        Me.lbl_name = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -63,7 +64,7 @@ Partial Class DaftarAnggota
         Me.GroupBox1.Controls.Add(Me.txt_nama)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txt_id)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 95)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(310, 249)
         Me.GroupBox1.TabIndex = 0
@@ -197,7 +198,7 @@ Partial Class DaftarAnggota
         Me.GroupBox2.Controls.Add(Me.txt_password)
         Me.GroupBox2.Controls.Add(Me.Label7)
         Me.GroupBox2.Controls.Add(Me.txt_username)
-        Me.GroupBox2.Location = New System.Drawing.Point(328, 12)
+        Me.GroupBox2.Location = New System.Drawing.Point(328, 95)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(298, 121)
         Me.GroupBox2.TabIndex = 1
@@ -218,6 +219,7 @@ Partial Class DaftarAnggota
         Me.txt_re_password.Enabled = False
         Me.txt_re_password.Location = New System.Drawing.Point(88, 76)
         Me.txt_re_password.Name = "txt_re_password"
+        Me.txt_re_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txt_re_password.Size = New System.Drawing.Size(186, 20)
         Me.txt_re_password.TabIndex = 19
         '
@@ -235,6 +237,7 @@ Partial Class DaftarAnggota
         Me.txt_password.Enabled = False
         Me.txt_password.Location = New System.Drawing.Point(88, 50)
         Me.txt_password.Name = "txt_password"
+        Me.txt_password.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txt_password.Size = New System.Drawing.Size(186, 20)
         Me.txt_password.TabIndex = 17
         '
@@ -257,18 +260,31 @@ Partial Class DaftarAnggota
         '
         'btn_daftar
         '
-        Me.btn_daftar.Location = New System.Drawing.Point(416, 179)
+        Me.btn_daftar.Location = New System.Drawing.Point(400, 262)
         Me.btn_daftar.Name = "btn_daftar"
         Me.btn_daftar.Size = New System.Drawing.Size(175, 64)
         Me.btn_daftar.TabIndex = 2
         Me.btn_daftar.Text = "Daftar"
         Me.btn_daftar.UseVisualStyleBackColor = True
         '
+        'lbl_name
+        '
+        Me.lbl_name.BackColor = System.Drawing.Color.Maroon
+        Me.lbl_name.Font = New System.Drawing.Font("Garamond", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_name.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lbl_name.Location = New System.Drawing.Point(-6, 9)
+        Me.lbl_name.Name = "lbl_name"
+        Me.lbl_name.Size = New System.Drawing.Size(650, 66)
+        Me.lbl_name.TabIndex = 4
+        Me.lbl_name.Text = "Daftar Anggota"
+        Me.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'DaftarAnggota
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(638, 280)
+        Me.ClientSize = New System.Drawing.Size(638, 356)
+        Me.Controls.Add(Me.lbl_name)
         Me.Controls.Add(Me.btn_daftar)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
@@ -304,4 +320,5 @@ Partial Class DaftarAnggota
     Friend WithEvents txt_username As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents txt_re_password As TextBox
+    Friend WithEvents lbl_name As Label
 End Class

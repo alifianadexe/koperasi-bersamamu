@@ -4,11 +4,11 @@
     Dim rd As SqlClient.SqlDataReader
 
     Private Sub DaftarAnggota_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        conn.ConnectionString = "Data Source=locahost,1433;Network Library=DBMSSOCN;Initial Catalog=db_hotel;user id=alifianadexe;password=adexe123"
+        conn.ConnectionString = "Data Source=localhost,1433;Network Library=DBMSSOCN;Initial Catalog=db_koperasi;user id=alifianadexe;password=adexe123"
         conn.Open()
 
         Me.txt_id.Text = generateID("id_anggota", conn)
-
+        is_enabled(True)
     End Sub
 
     Private Sub is_enabled(ByVal bool As Boolean)
@@ -41,7 +41,7 @@
         Dim jenis As String = ""
         Try
             If cekEmptyBox(Me.txt_alamat, Me.txt_nama, Me.txt_password, Me.txt_re_password, Me.txt_username, Me.txt_tempat_lahir) Then
-                If cekUsername(Me.txt_username.Text) Then
+                If cekUsername(Me.txt_username.Text, conn) Then
                     If Me.txt_re_password.Text = Me.txt_password.Text Then
                         Dim sql As String = "INSERT INTO tbl_anggota (id_anggota,id_jabatan,username,password,nama,jenis_kelamin,tempat_lahir,tanggal_lahir,alamat,is_active) VALUES (@v1,@v2,@v3,@v4,@v5,@v6,@v7,@v8,@v9,@v10)"
                         Using cmnd As New SqlClient.SqlCommand(sql, conn)
@@ -63,8 +63,11 @@
                             cmnd.Parameters.AddWithValue("@v9", Me.txt_alamat.Text)
                             cmnd.Parameters.AddWithValue("@v10", 0)
 
+
+
                             If MessageBox.Show("Apakah Data diri anda Sudah benar, dan mensetujui persyaratan yang berlaku?", "Will you", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
                                 cmnd.ExecuteNonQuery()
+                                MessageBox.Show("Selamat anda berhasil terdaftar, Tolong konfirmasi di petugas", "Selamat", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
                             End If
                         End Using
                     Else

@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\ManagementAnggota.Designer.vb">
+      <DependentUpon>ManagementAnggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManagementAnggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin\ManagementJabatan.Designer.vb">
       <DependentUpon>ManagementJabatan.vb</DependentUpon>
     </Compile>
@@ -132,8 +138,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Admin\ManagementAnggota.resx">
+      <DependentUpon>ManagementAnggota.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\ManagementJabatan.resx">
       <DependentUpon>ManagementJabatan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\NavigationAdmin.resx">
+      <DependentUpon>NavigationAdmin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DaftarAnggota.resx">
       <DependentUpon>DaftarAnggota.vb</DependentUpon>
