@@ -38,6 +38,8 @@ Partial Class NavigationAnggota
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.lbl_name = New System.Windows.Forms.Label()
+        Me.lbl_simpanan = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -70,6 +72,8 @@ Partial Class NavigationAnggota
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.lbl_simpanan)
+        Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.lbl_jabatan)
         Me.GroupBox1.Controls.Add(Me.lbl_ttl)
         Me.GroupBox1.Controls.Add(Me.lbl_jenis)
@@ -92,7 +96,7 @@ Partial Class NavigationAnggota
         '
         Me.lbl_jabatan.AutoSize = True
         Me.lbl_jabatan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_jabatan.Location = New System.Drawing.Point(167, 142)
+        Me.lbl_jabatan.Location = New System.Drawing.Point(191, 141)
         Me.lbl_jabatan.Name = "lbl_jabatan"
         Me.lbl_jabatan.Size = New System.Drawing.Size(45, 13)
         Me.lbl_jabatan.TabIndex = 9
@@ -102,7 +106,7 @@ Partial Class NavigationAnggota
         '
         Me.lbl_ttl.AutoSize = True
         Me.lbl_ttl.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_ttl.Location = New System.Drawing.Point(167, 116)
+        Me.lbl_ttl.Location = New System.Drawing.Point(191, 115)
         Me.lbl_ttl.Name = "lbl_ttl"
         Me.lbl_ttl.Size = New System.Drawing.Size(45, 13)
         Me.lbl_ttl.TabIndex = 8
@@ -112,7 +116,7 @@ Partial Class NavigationAnggota
         '
         Me.lbl_jenis.AutoSize = True
         Me.lbl_jenis.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_jenis.Location = New System.Drawing.Point(167, 89)
+        Me.lbl_jenis.Location = New System.Drawing.Point(191, 88)
         Me.lbl_jenis.Name = "lbl_jenis"
         Me.lbl_jenis.Size = New System.Drawing.Size(45, 13)
         Me.lbl_jenis.TabIndex = 7
@@ -122,7 +126,7 @@ Partial Class NavigationAnggota
         '
         Me.lbl_nama.AutoSize = True
         Me.lbl_nama.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_nama.Location = New System.Drawing.Point(167, 63)
+        Me.lbl_nama.Location = New System.Drawing.Point(191, 62)
         Me.lbl_nama.Name = "lbl_nama"
         Me.lbl_nama.Size = New System.Drawing.Size(45, 13)
         Me.lbl_nama.TabIndex = 6
@@ -132,7 +136,7 @@ Partial Class NavigationAnggota
         '
         Me.lbl_id.AutoSize = True
         Me.lbl_id.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_id.Location = New System.Drawing.Point(167, 37)
+        Me.lbl_id.Location = New System.Drawing.Point(78, 25)
         Me.lbl_id.Name = "lbl_id"
         Me.lbl_id.Size = New System.Drawing.Size(52, 13)
         Me.lbl_id.TabIndex = 5
@@ -141,7 +145,7 @@ Partial Class NavigationAnggota
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(27, 142)
+        Me.Label5.Location = New System.Drawing.Point(51, 141)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(45, 13)
         Me.Label5.TabIndex = 4
@@ -150,7 +154,7 @@ Partial Class NavigationAnggota
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(27, 116)
+        Me.Label4.Location = New System.Drawing.Point(51, 115)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(111, 13)
         Me.Label4.TabIndex = 3
@@ -159,7 +163,7 @@ Partial Class NavigationAnggota
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(27, 89)
+        Me.Label3.Location = New System.Drawing.Point(51, 88)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(71, 13)
         Me.Label3.TabIndex = 2
@@ -168,7 +172,7 @@ Partial Class NavigationAnggota
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(27, 63)
+        Me.Label2.Location = New System.Drawing.Point(51, 62)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(35, 13)
         Me.Label2.TabIndex = 1
@@ -177,11 +181,11 @@ Partial Class NavigationAnggota
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(27, 37)
+        Me.Label1.Location = New System.Drawing.Point(11, 25)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(18, 13)
+        Me.Label1.Size = New System.Drawing.Size(61, 13)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "ID"
+        Me.Label1.Text = "ID Anggota"
         '
         'Button4
         '
@@ -203,6 +207,25 @@ Partial Class NavigationAnggota
         Me.lbl_name.TabIndex = 6
         Me.lbl_name.Text = "Navigation Anggota"
         Me.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lbl_simpanan
+        '
+        Me.lbl_simpanan.AutoSize = True
+        Me.lbl_simpanan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_simpanan.Location = New System.Drawing.Point(299, 25)
+        Me.lbl_simpanan.Name = "lbl_simpanan"
+        Me.lbl_simpanan.Size = New System.Drawing.Size(45, 13)
+        Me.lbl_simpanan.TabIndex = 11
+        Me.lbl_simpanan.Text = "Label6"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(225, 25)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(68, 13)
+        Me.Label7.TabIndex = 10
+        Me.Label7.Text = "ID Simpanan"
         '
         'NavigationAnggota
         '
@@ -238,4 +261,6 @@ Partial Class NavigationAnggota
     Friend WithEvents Label1 As Label
     Friend WithEvents Button4 As Button
     Friend WithEvents lbl_name As Label
+    Friend WithEvents lbl_simpanan As Label
+    Friend WithEvents Label7 As Label
 End Class

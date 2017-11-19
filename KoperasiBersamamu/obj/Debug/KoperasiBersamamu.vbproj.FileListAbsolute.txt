@@ -14,3 +14,10 @@ C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersa
 C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.pdb
 C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.NavigationAdmin.resources
 C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.ManagementAnggota.resources
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.ManagementJenisSimpanan.resources
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.ManagementSimpanan.resources
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.AmbilForm.resources
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.NavigationAnggota.resources
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.SimpananAnggota.resources
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.SimpanForm.resources
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.NavigationPetugas.resources

@@ -173,13 +173,18 @@
 
     Private Sub btn_conf_Click(sender As Object, e As EventArgs) Handles btn_conf.Click
         If Not Me.txt_id.Text = "" Then
+            Dim sql As String = "UPDATE tbl_anggota SET is_active = 1 WHERE id_anggota = '" + Me.txt_id.Text + "'"
+            Dim cmnd As New SqlClient.SqlCommand(sql, conn)
             If MessageBox.Show("Update data tersebut?", "Will you", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
-                Dim sql As String = "UPDATE tbl_anggota SET is_accept = 1 WHERE id_anggota = '" + Me.txt_id.Text + "'"
-                Dim cmnd As New SqlClient.SqlCommand(sql, conn)
-                cmnd.ExecuteNonQuery()
-                MessageBox.Show("Data Berhasil Di Update", "Selamat", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                If MessageBox.Show("Apakah anggota sudah menkonfirmasi Data Diri dan juga memberikan Simpanan Wajib Sejumlah Rp. 50,000.00 ?", "Will", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+                    createSimpanan()
+                    cmnd.ExecuteNonQuery()
+                    MessageBox.Show("Anggota Berhasil Dikonfirmasi", "Selamat", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                End If
             End If
-        End If
+
+            refreshData()
+            End If
     End Sub
 
     Private Sub data_grid_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles data_grid.CellClick
@@ -241,8 +246,41 @@
 
                 Me.txt_jabatan.SelectedValue = rd.Item("id_jabatan")
 
+                If rd.Item("is_active") = 1 Then
+                    Me.lbl_status.Text = "Sudah Terkonfirmasi"
+                    Me.btn_conf.Enabled = False
+                Else
+                    Me.lbl_status.Text = "Belum Terkonfirmasi"
+                    Me.btn_conf.Enabled = True
+                End If
+
             End If
             rd.Close()
         End If
+    End Sub
+
+    Private Sub createSimpanan()
+        Dim id As String = generateID("id_simpanan", conn)
+        Dim sql As String = "INSERT INTO tbl_simpanan (id_simpanan, id_anggota, saldo) VALUES (@v1,@v2,@v4)"
+        Using cmnd As New SqlClient.SqlCommand(sql, conn)
+            cmnd.Parameters.AddWithValue("@v1", id)
+            cmnd.Parameters.AddWithValue("@v2", Me.txt_id.Text)
+            cmnd.Parameters.AddWithValue("@v4", 50000)
+
+            Dim sql_det As String = "INSERT INTO tbl_det_simpanan (id_det_simpanan, id_simpanan,  id_jenis_simpanan, tanggal_transaksi, jumlah_simpan, jumlah_ambil) VALUES (@v1,@v2,@v3,@v4,@v5,@v6)"
+            Using cmnd_det As New SqlClient.SqlCommand(sql_det, conn)
+                cmnd_det.Parameters.AddWithValue("@v1", generateID("id_det_simpanan", conn))
+                cmnd_det.Parameters.AddWithValue("@v2", id)
+                cmnd_det.Parameters.AddWithValue("@v3", "JNS001")
+                cmnd_det.Parameters.AddWithValue("@v4", Date.Now)
+                cmnd_det.Parameters.AddWithValue("@v5", 50000)
+                cmnd_det.Parameters.AddWithValue("@v6", 0)
+
+                cmnd_det.ExecuteNonQuery()
+
+            End Using
+
+            cmnd.ExecuteNonQuery()
+            End Using
     End Sub
 End Class

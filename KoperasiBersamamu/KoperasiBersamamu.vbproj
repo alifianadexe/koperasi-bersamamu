@@ -84,16 +84,46 @@
     <Compile Include="Admin\ManagementJabatan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Admin\ManagementJenisSimpanan.Designer.vb">
+      <DependentUpon>ManagementJenisSimpanan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManagementJenisSimpanan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ManagementSimpanan.Designer.vb">
+      <DependentUpon>ManagementSimpanan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManagementSimpanan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin\NavigationAdmin.Designer.vb">
       <DependentUpon>NavigationAdmin.vb</DependentUpon>
     </Compile>
     <Compile Include="Admin\NavigationAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Anggota\AmbilForm.Designer.vb">
+      <DependentUpon>AmbilForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Anggota\AmbilForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Anggota\NavigationAnggota.Designer.vb">
       <DependentUpon>NavigationAnggota.vb</DependentUpon>
     </Compile>
     <Compile Include="Anggota\NavigationAnggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anggota\SimpananAnggota.Designer.vb">
+      <DependentUpon>SimpananAnggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Anggota\SimpananAnggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anggota\SimpanForm.Designer.vb">
+      <DependentUpon>SimpanForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Anggota\SimpanForm.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DaftarAnggota.Designer.vb">
@@ -144,8 +174,26 @@
     <EmbeddedResource Include="Admin\ManagementJabatan.resx">
       <DependentUpon>ManagementJabatan.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ManagementJenisSimpanan.resx">
+      <DependentUpon>ManagementJenisSimpanan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ManagementSimpanan.resx">
+      <DependentUpon>ManagementSimpanan.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\NavigationAdmin.resx">
       <DependentUpon>NavigationAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anggota\AmbilForm.resx">
+      <DependentUpon>AmbilForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anggota\NavigationAnggota.resx">
+      <DependentUpon>NavigationAnggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anggota\SimpananAnggota.resx">
+      <DependentUpon>SimpananAnggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anggota\SimpanForm.resx">
+      <DependentUpon>SimpanForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DaftarAnggota.resx">
       <DependentUpon>DaftarAnggota.vb</DependentUpon>
@@ -161,6 +209,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pengurus\NavigationPetugas.resx">
+      <DependentUpon>NavigationPetugas.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

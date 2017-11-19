@@ -34,18 +34,28 @@ Partial Class ManagementSimpanan
         '
         'data_grid_anggota
         '
+        Me.data_grid_anggota.AllowUserToAddRows = False
+        Me.data_grid_anggota.AllowUserToDeleteRows = False
+        Me.data_grid_anggota.AllowUserToOrderColumns = True
         Me.data_grid_anggota.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.data_grid_anggota.Location = New System.Drawing.Point(12, 110)
         Me.data_grid_anggota.Name = "data_grid_anggota"
-        Me.data_grid_anggota.Size = New System.Drawing.Size(236, 484)
+        Me.data_grid_anggota.ReadOnly = True
+        Me.data_grid_anggota.Size = New System.Drawing.Size(245, 484)
         Me.data_grid_anggota.TabIndex = 0
         '
         'data_grid_simpanan
         '
+        Me.data_grid_simpanan.AllowUserToAddRows = False
+        Me.data_grid_simpanan.AllowUserToDeleteRows = False
+        Me.data_grid_simpanan.AllowUserToOrderColumns = True
+        Me.data_grid_simpanan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.data_grid_simpanan.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.data_grid_simpanan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.data_grid_simpanan.Location = New System.Drawing.Point(276, 110)
         Me.data_grid_simpanan.Name = "data_grid_simpanan"
-        Me.data_grid_simpanan.Size = New System.Drawing.Size(593, 423)
+        Me.data_grid_simpanan.ReadOnly = True
+        Me.data_grid_simpanan.Size = New System.Drawing.Size(771, 423)
         Me.data_grid_simpanan.TabIndex = 1
         '
         'lbl_name
@@ -55,14 +65,14 @@ Partial Class ManagementSimpanan
         Me.lbl_name.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.lbl_name.Location = New System.Drawing.Point(-4, 9)
         Me.lbl_name.Name = "lbl_name"
-        Me.lbl_name.Size = New System.Drawing.Size(908, 66)
+        Me.lbl_name.Size = New System.Drawing.Size(1065, 66)
         Me.lbl_name.TabIndex = 12
         Me.lbl_name.Text = "Management Simpanan"
         Me.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(714, 539)
+        Me.Button1.Location = New System.Drawing.Point(892, 539)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(155, 55)
         Me.Button1.TabIndex = 13
@@ -76,7 +86,7 @@ Partial Class ManagementSimpanan
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label3.Location = New System.Drawing.Point(12, 87)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(236, 20)
+        Me.Label3.Size = New System.Drawing.Size(245, 20)
         Me.Label3.TabIndex = 16
         Me.Label3.Text = "Daftar Anggota"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -88,7 +98,7 @@ Partial Class ManagementSimpanan
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.Label1.Location = New System.Drawing.Point(276, 87)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(593, 20)
+        Me.Label1.Size = New System.Drawing.Size(771, 20)
         Me.Label1.TabIndex = 17
         Me.Label1.Text = "Rekap Tabungan"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -97,7 +107,7 @@ Partial Class ManagementSimpanan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(899, 606)
+        Me.ClientSize = New System.Drawing.Size(1059, 606)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button1)

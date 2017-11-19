@@ -23,7 +23,11 @@
                 If password = Me.txt_password.Text Then
                     id = rd.Item("id_anggota")
                     id_jabatan = rd.Item("id_jabatan")
+                Else
+                    MessageBox.Show("Maaf, Password Anda Salah")
                 End If
+            Else
+                MessageBox.Show("Maaf, Anda Belum Terdaftar")
             End If
             rd.Close()
 

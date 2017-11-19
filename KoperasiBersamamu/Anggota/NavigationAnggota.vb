@@ -19,5 +19,11 @@
             Me.lbl_ttl.Text = rd.Item("tempat_lahir") + "," + rd.Item("tanggal_lahir")
         End If
         rd.Close()
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        SimpananAnggota.Tag = Me.Tag
+        SimpananAnggota.Show()
     End Sub
 End Class

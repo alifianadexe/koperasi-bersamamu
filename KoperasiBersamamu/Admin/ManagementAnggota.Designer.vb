@@ -28,7 +28,7 @@ Partial Class ManagementAnggota
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.data_grid_non = New System.Windows.Forms.DataGridView()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label8 = New System.Windows.Forms.Label()
+        Me.lbl_status = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.btn_conf = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -127,7 +127,7 @@ Partial Class ManagementAnggota
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.Label8)
+        Me.GroupBox2.Controls.Add(Me.lbl_status)
         Me.GroupBox2.Controls.Add(Me.Label7)
         Me.GroupBox2.Controls.Add(Me.btn_conf)
         Me.GroupBox2.Location = New System.Drawing.Point(341, 187)
@@ -137,14 +137,15 @@ Partial Class ManagementAnggota
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Status Aktif"
         '
-        'Label8
+        'lbl_status
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(94, 26)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(102, 13)
-        Me.Label8.TabIndex = 2
-        Me.Label8.Text = "Belum Terkonfirmasi"
+        Me.lbl_status.AutoSize = True
+        Me.lbl_status.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_status.Location = New System.Drawing.Point(94, 26)
+        Me.lbl_status.Name = "lbl_status"
+        Me.lbl_status.Size = New System.Drawing.Size(121, 13)
+        Me.lbl_status.TabIndex = 2
+        Me.lbl_status.Text = "Belum Terkonfirmasi"
         '
         'Label7
         '
@@ -489,7 +490,7 @@ Partial Class ManagementAnggota
     Friend WithEvents txt_nama As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents txt_id As TextBox
-    Friend WithEvents Label8 As Label
+    Friend WithEvents lbl_status As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents btn_conf As Button
     Friend WithEvents btn_add As Button
