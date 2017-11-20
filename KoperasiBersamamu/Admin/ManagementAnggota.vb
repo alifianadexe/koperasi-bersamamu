@@ -267,7 +267,7 @@
             cmnd.Parameters.AddWithValue("@v2", Me.txt_id.Text)
             cmnd.Parameters.AddWithValue("@v4", 50000)
 
-            Dim sql_det As String = "INSERT INTO tbl_det_simpanan (id_det_simpanan, id_simpanan,  id_jenis_simpanan, tanggal_transaksi, jumlah_simpan, jumlah_ambil) VALUES (@v1,@v2,@v3,@v4,@v5,@v6)"
+            Dim sql_det As String = "INSERT INTO tbl_det_simpanan (id_det_simpanan, id_simpanan,  id_jenis_simpanan, tanggal_transaksi, jumlah_simpan, jumlah_ambil, total) VALUES (@v1,@v2,@v3,@v4,@v5,@v6,@v7)"
             Using cmnd_det As New SqlClient.SqlCommand(sql_det, conn)
                 cmnd_det.Parameters.AddWithValue("@v1", generateID("id_det_simpanan", conn))
                 cmnd_det.Parameters.AddWithValue("@v2", id)
@@ -275,6 +275,7 @@
                 cmnd_det.Parameters.AddWithValue("@v4", Date.Now)
                 cmnd_det.Parameters.AddWithValue("@v5", 50000)
                 cmnd_det.Parameters.AddWithValue("@v6", 0)
+                cmnd_det.Parameters.AddWithValue("@v7", 50000)
 
                 cmnd_det.ExecuteNonQuery()
 

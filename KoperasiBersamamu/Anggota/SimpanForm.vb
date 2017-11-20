@@ -2,6 +2,8 @@
     Dim conn As New SqlClient.SqlConnection
     Dim rd As SqlClient.SqlDataReader
 
+    Public value As Integer
+
     Private Sub SimpanForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         conn.ConnectionString = generateConnString()
         conn.Open()
@@ -25,26 +27,34 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If Not Me.txt_jumlah.Text = "" Then
             If MessageBox.Show("Apakah anda ingin Menyimpan uang anda dengan jumlah Berikut ?", "will you", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
-                Dim sql As String = "INSERT INTO tbl_det_simpanan (id_det_simpanan, id_simpanan, id_jenis_simpanan, tanggal_transaksi ,jumlah_simpan, jumlah_ambil) VALUES (@v1,@v2,@v3,@v4)"
+                Dim sql As String = "INSERT INTO tbl_det_simpanan (id_det_simpanan, id_simpanan, id_jenis_simpanan, tanggal_transaksi ,jumlah_simpan, jumlah_ambil, total) VALUES (@v1,@v2,@v3,@v4,@v5,@v6,@v7)"
                 Using cmnd As New SqlClient.SqlCommand(sql, conn)
+
                     cmnd.Parameters.AddWithValue("@v1", generateID("id_det_simpanan", conn))
                     cmnd.Parameters.AddWithValue("@v2", Me.lbl_simpanan.Text)
-                    cmnd.Parameters.AddWithValue("@v3", Me.txt_jenis_tabung.Text)
+                    cmnd.Parameters.AddWithValue("@v3", Me.txt_jenis_tabung.SelectedValue)
                     cmnd.Parameters.AddWithValue("@v4", Date.Now)
                     cmnd.Parameters.AddWithValue("@v5", Me.txt_jumlah.Text)
                     cmnd.Parameters.AddWithValue("@v6", 0)
+
+                    value = Integer.Parse(value + Val(Me.txt_jumlah.Text))
+
+                    cmnd.Parameters.AddWithValue("@v7", value)
+
                     cmnd.ExecuteNonQuery()
 
-                    updateSaldo(Me.txt_jumlah.Text)
+                    updateSaldo(value)
 
+                    MessageBox.Show("Selamat Anda Berhasil Menyimpan Uang Anda", "Congrats", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                    Me.Close()
                 End Using
 
             End If
         End If
     End Sub
 
-    Private Sub updateSaldo(ByVal value As Integer)
-        Dim sql As String = "UPDATE tbl_simpanan SET saldo = " + value + " WHERE id_simpanan = '" + Me.lbl_simpanan.Text + "'"
+    Private Sub updateSaldo(ByVal value As String)
+        Dim sql As String = "UPDATE tbl_simpanan SET saldo = " + Str(value) + " WHERE id_simpanan = '" + Me.lbl_simpanan.Text + "'"
         Dim cmnd As New SqlClient.SqlCommand(sql, conn)
         cmnd.ExecuteNonQuery()
     End Sub

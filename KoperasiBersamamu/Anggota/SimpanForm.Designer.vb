@@ -42,7 +42,7 @@ Partial Class SimpanForm
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txt_jumlah)
         Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 27)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 25)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(560, 134)
         Me.GroupBox1.TabIndex = 0
@@ -94,7 +94,7 @@ Partial Class SimpanForm
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(414, 59)
+        Me.Button1.Location = New System.Drawing.Point(414, 54)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(140, 55)
         Me.Button1.TabIndex = 0
@@ -104,7 +104,7 @@ Partial Class SimpanForm
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(378, 11)
+        Me.Label4.Location = New System.Drawing.Point(417, 9)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(68, 13)
         Me.Label4.TabIndex = 1
@@ -114,7 +114,7 @@ Partial Class SimpanForm
         '
         Me.lbl_simpanan.AutoSize = True
         Me.lbl_simpanan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_simpanan.Location = New System.Drawing.Point(448, 11)
+        Me.lbl_simpanan.Location = New System.Drawing.Point(491, 9)
         Me.lbl_simpanan.Name = "lbl_simpanan"
         Me.lbl_simpanan.Size = New System.Drawing.Size(45, 13)
         Me.lbl_simpanan.TabIndex = 2
@@ -124,7 +124,7 @@ Partial Class SimpanForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(584, 173)
+        Me.ClientSize = New System.Drawing.Size(584, 171)
         Me.Controls.Add(Me.lbl_simpanan)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.GroupBox1)

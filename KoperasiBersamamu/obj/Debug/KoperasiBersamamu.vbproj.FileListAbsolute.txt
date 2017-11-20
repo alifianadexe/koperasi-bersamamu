@@ -21,3 +21,6 @@ C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersa
 C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.SimpananAnggota.resources
 C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.SimpanForm.resources
 C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.NavigationPetugas.resources
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.PeminjamanAnggota.resources
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.ManagementPinjaman.resources
+C:\Users\AdexeAmih\Documents\VisualStudioProject\KoperasiBersamamu\KoperasiBersamamu\obj\Debug\KoperasiBersamamu.AngsuranForm.resources

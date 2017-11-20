@@ -26,4 +26,14 @@
         SimpananAnggota.Tag = Me.Tag
         SimpananAnggota.Show()
     End Sub
+
+    Private Sub NavigationAnggota_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        MainForm.Show()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        PeminjamanAnggota.Tag = Me.Tag
+        PeminjamanAnggota.Show()
+
+    End Sub
 End Class

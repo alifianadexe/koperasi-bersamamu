@@ -90,6 +90,12 @@
     <Compile Include="Admin\ManagementJenisSimpanan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Admin\ManagementPinjaman.Designer.vb">
+      <DependentUpon>ManagementPinjaman.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManagementPinjaman.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin\ManagementSimpanan.Designer.vb">
       <DependentUpon>ManagementSimpanan.vb</DependentUpon>
     </Compile>
@@ -108,10 +114,22 @@
     <Compile Include="Anggota\AmbilForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Anggota\AngsuranForm.Designer.vb">
+      <DependentUpon>AngsuranForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Anggota\AngsuranForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Anggota\NavigationAnggota.Designer.vb">
       <DependentUpon>NavigationAnggota.vb</DependentUpon>
     </Compile>
     <Compile Include="Anggota\NavigationAnggota.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anggota\PeminjamanAnggota.Designer.vb">
+      <DependentUpon>PeminjamanAnggota.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Anggota\PeminjamanAnggota.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Anggota\SimpananAnggota.Designer.vb">
@@ -177,6 +195,9 @@
     <EmbeddedResource Include="Admin\ManagementJenisSimpanan.resx">
       <DependentUpon>ManagementJenisSimpanan.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ManagementPinjaman.resx">
+      <DependentUpon>ManagementPinjaman.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\ManagementSimpanan.resx">
       <DependentUpon>ManagementSimpanan.vb</DependentUpon>
     </EmbeddedResource>
@@ -186,8 +207,14 @@
     <EmbeddedResource Include="Anggota\AmbilForm.resx">
       <DependentUpon>AmbilForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Anggota\AngsuranForm.resx">
+      <DependentUpon>AngsuranForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Anggota\NavigationAnggota.resx">
       <DependentUpon>NavigationAnggota.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anggota\PeminjamanAnggota.resx">
+      <DependentUpon>PeminjamanAnggota.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Anggota\SimpananAnggota.resx">
       <DependentUpon>SimpananAnggota.vb</DependentUpon>

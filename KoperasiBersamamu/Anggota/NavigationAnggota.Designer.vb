@@ -38,8 +38,6 @@ Partial Class NavigationAnggota
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.lbl_name = New System.Windows.Forms.Label()
-        Me.lbl_simpanan = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -72,8 +70,6 @@ Partial Class NavigationAnggota
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.lbl_simpanan)
-        Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.lbl_jabatan)
         Me.GroupBox1.Controls.Add(Me.lbl_ttl)
         Me.GroupBox1.Controls.Add(Me.lbl_jenis)
@@ -90,7 +86,7 @@ Partial Class NavigationAnggota
         Me.GroupBox1.Size = New System.Drawing.Size(374, 209)
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Admin Data"
+        Me.GroupBox1.Text = "Data Anggota"
         '
         'lbl_jabatan
         '
@@ -208,25 +204,6 @@ Partial Class NavigationAnggota
         Me.lbl_name.Text = "Navigation Anggota"
         Me.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'lbl_simpanan
-        '
-        Me.lbl_simpanan.AutoSize = True
-        Me.lbl_simpanan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_simpanan.Location = New System.Drawing.Point(299, 25)
-        Me.lbl_simpanan.Name = "lbl_simpanan"
-        Me.lbl_simpanan.Size = New System.Drawing.Size(45, 13)
-        Me.lbl_simpanan.TabIndex = 11
-        Me.lbl_simpanan.Text = "Label6"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(225, 25)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(68, 13)
-        Me.Label7.TabIndex = 10
-        Me.Label7.Text = "ID Simpanan"
-        '
         'NavigationAnggota
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -261,6 +238,4 @@ Partial Class NavigationAnggota
     Friend WithEvents Label1 As Label
     Friend WithEvents Button4 As Button
     Friend WithEvents lbl_name As Label
-    Friend WithEvents lbl_simpanan As Label
-    Friend WithEvents Label7 As Label
 End Class

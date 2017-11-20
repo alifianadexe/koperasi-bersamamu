@@ -36,4 +36,8 @@
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         ManagementSimpanan.Show()
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        ManagementPinjaman.Show()
+    End Sub
 End Class

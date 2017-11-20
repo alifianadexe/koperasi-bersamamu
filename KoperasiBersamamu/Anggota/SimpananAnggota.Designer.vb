@@ -28,6 +28,7 @@ Partial Class SimpananAnggota
         Me.lbl_name = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lbl_saldo = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.data_grid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -40,7 +41,7 @@ Partial Class SimpananAnggota
         Me.data_grid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.data_grid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.data_grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.data_grid.Location = New System.Drawing.Point(12, 90)
+        Me.data_grid.Location = New System.Drawing.Point(12, 121)
         Me.data_grid.Name = "data_grid"
         Me.data_grid.ReadOnly = True
         Me.data_grid.Size = New System.Drawing.Size(792, 345)
@@ -48,7 +49,7 @@ Partial Class SimpananAnggota
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 441)
+        Me.Button1.Location = New System.Drawing.Point(12, 472)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(156, 46)
         Me.Button1.TabIndex = 2
@@ -57,7 +58,7 @@ Partial Class SimpananAnggota
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(174, 441)
+        Me.Button2.Location = New System.Drawing.Point(174, 472)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(156, 46)
         Me.Button2.TabIndex = 3
@@ -79,7 +80,7 @@ Partial Class SimpananAnggota
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.lbl_saldo)
-        Me.GroupBox1.Location = New System.Drawing.Point(475, 441)
+        Me.GroupBox1.Location = New System.Drawing.Point(475, 472)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(329, 56)
         Me.GroupBox1.TabIndex = 7
@@ -97,11 +98,21 @@ Partial Class SimpananAnggota
         Me.lbl_saldo.Text = "Rp. 12,000,000"
         Me.lbl_saldo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(12, 78)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(52, 37)
+        Me.Button3.TabIndex = 8
+        Me.Button3.Text = "Refresh"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'SimpananAnggota
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(821, 509)
+        Me.ClientSize = New System.Drawing.Size(821, 537)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.lbl_name)
         Me.Controls.Add(Me.Button2)
@@ -121,4 +132,5 @@ Partial Class SimpananAnggota
     Friend WithEvents lbl_name As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents lbl_saldo As Label
+    Friend WithEvents Button3 As Button
 End Class
