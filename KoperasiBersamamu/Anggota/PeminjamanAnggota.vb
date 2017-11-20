@@ -15,7 +15,7 @@
     End Sub
 
     Private Sub refreshData()
-        Dim sql As String = "SELECT tbl_peminjaman.id_peminjaman as [ID Peminjaman], jumlah_peminjaman as [Jumlah Peminjaman (Rp.)], kali_angsur, jumlah_angsur [Jumlah Angsur (Rp.)], bunga [Bunga (Rp.)], total_bunga [Total Bunga (Rp.)], total_angsur [Total Angsur (Rp.)] FROM tbl_total_bunga INNER JOIN tbl_peminjaman ON tbl_peminjaman.id_peminjaman = tbl_total_bunga.id_peminjaman WHERE id_anggota = '" + Me.Tag + "'"
+        Dim sql As String = "SELECT tbl_peminjaman.id_peminjaman as [ID Peminjaman], jumlah_peminjaman as [Jumlah Peminjaman (Rp.)], kali_angsur, jumlah_angsur [Jumlah Angsur (Rp.)], bunga [Bunga (Rp.)], total_bunga [Total Bunga (Rp.)], total_angsur [Total Angsur (Rp.)] FROM tbl_total_bunga INNER JOIN tbl_peminjaman ON tbl_peminjaman.id_peminjaman = tbl_total_bunga.id_peminjaman WHERE id_anggota = '" + Me.Tag + "' AND is_lunas = 0"
         Dim adapter As New SqlClient.SqlDataAdapter(sql, conn)
         Dim dt As New DataTable
 
@@ -64,7 +64,7 @@
                 If MessageBox.Show("Apakah anda ingin meminjam uang dengan jumlah Berikut ?", "will you", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
 
                     Dim id_peminjaman As String = generateID("id_peminjaman", conn)
-                    Dim sql As String = "INSERT INTO tbl_peminjaman (id_peminjaman, tanggal_peminjaman, jumlah_peminjaman , kali_angsur, jumlah_angsur, bunga, total_angsur) VALUES (@v1,@v3,@v4,@v5,@v6,@v7,@v8)"
+                    Dim sql As String = "INSERT INTO tbl_peminjaman (id_peminjaman, tanggal_peminjaman, jumlah_peminjaman , kali_angsur, jumlah_angsur, bunga, total_angsur, is_lunas) VALUES (@v1,@v3,@v4,@v5,@v6,@v7,@v8,@v9)"
                     Using cmnd As New SqlClient.SqlCommand(sql, conn)
 
                         cmnd.Parameters.AddWithValue("@v1", id_peminjaman)
@@ -74,6 +74,7 @@
                         cmnd.Parameters.AddWithValue("@v6", angsuranBulan)
                         cmnd.Parameters.AddWithValue("@v7", bunga)
                         cmnd.Parameters.AddWithValue("@v8", hasil)
+                        cmnd.Parameters.AddWithValue("@v9", 0)
 
                         createTotalBunga(id_peminjaman)
 

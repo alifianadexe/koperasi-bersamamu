@@ -119,6 +119,7 @@ Partial Class SimpananAnggota
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.data_grid)
         Me.Name = "SimpananAnggota"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "SimpananAnggota"
         CType(Me.data_grid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)

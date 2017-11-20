@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\DetailAngsuran.Designer.vb">
+      <DependentUpon>DetailAngsuran.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DetailAngsuran.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Admin\ManagementAnggota.Designer.vb">
       <DependentUpon>ManagementAnggota.vb</DependentUpon>
     </Compile>
@@ -186,6 +192,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Admin\DetailAngsuran.resx">
+      <DependentUpon>DetailAngsuran.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\ManagementAnggota.resx">
       <DependentUpon>ManagementAnggota.vb</DependentUpon>
     </EmbeddedResource>

@@ -68,6 +68,7 @@
                             If MessageBox.Show("Apakah Data diri anda Sudah benar, dan mensetujui persyaratan yang berlaku?", "Will you", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
                                 cmnd.ExecuteNonQuery()
                                 MessageBox.Show("Selamat anda berhasil terdaftar, Tolong konfirmasi di petugas", "Selamat", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                                Me.Close()
                             End If
                         End Using
                     Else

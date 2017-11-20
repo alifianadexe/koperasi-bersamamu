@@ -226,6 +226,7 @@ Partial Class NavigationAdmin
         Me.Controls.Add(Me.lbl_name)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "NavigationAdmin"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "NavigationAdmin"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

@@ -257,6 +257,7 @@ Partial Class PeminjamanAnggota
         Me.Controls.Add(Me.lbl_name)
         Me.Controls.Add(Me.data_grid_pinjaman)
         Me.Name = "PeminjamanAnggota"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PeminjamanAnggota"
         CType(Me.data_grid_pinjaman, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)

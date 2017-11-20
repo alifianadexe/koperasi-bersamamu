@@ -25,6 +25,8 @@ Partial Class ManagementJenisSimpanan
         Me.btn_add = New System.Windows.Forms.Button()
         Me.txt_nama = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txt_id = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txt_bunga = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -34,8 +36,6 @@ Partial Class ManagementJenisSimpanan
         Me.btn_insert = New System.Windows.Forms.Button()
         Me.btn_edit = New System.Windows.Forms.Button()
         Me.btn_delete = New System.Windows.Forms.Button()
-        Me.txt_id = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -71,6 +71,23 @@ Partial Class ManagementJenisSimpanan
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Data Jenis Simpanan"
+        '
+        'txt_id
+        '
+        Me.txt_id.Enabled = False
+        Me.txt_id.Location = New System.Drawing.Point(100, 36)
+        Me.txt_id.Name = "txt_id"
+        Me.txt_id.Size = New System.Drawing.Size(46, 20)
+        Me.txt_id.TabIndex = 9
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(36, 39)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(21, 13)
+        Me.Label5.TabIndex = 8
+        Me.Label5.Text = "ID "
         '
         'Label4
         '
@@ -151,23 +168,6 @@ Partial Class ManagementJenisSimpanan
         Me.btn_delete.Text = "Delete"
         Me.btn_delete.UseVisualStyleBackColor = True
         '
-        'txt_id
-        '
-        Me.txt_id.Enabled = False
-        Me.txt_id.Location = New System.Drawing.Point(100, 36)
-        Me.txt_id.Name = "txt_id"
-        Me.txt_id.Size = New System.Drawing.Size(46, 20)
-        Me.txt_id.TabIndex = 9
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(36, 39)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(21, 13)
-        Me.Label5.TabIndex = 8
-        Me.Label5.Text = "ID "
-        '
         'ManagementJenisSimpanan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -181,6 +181,7 @@ Partial Class ManagementJenisSimpanan
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.btn_add)
         Me.Name = "ManagementJenisSimpanan"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Management Jenis Simpanan"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

@@ -115,6 +115,7 @@ Partial Class ManagementSimpanan
         Me.Controls.Add(Me.data_grid_simpanan)
         Me.Controls.Add(Me.data_grid_anggota)
         Me.Name = "ManagementSimpanan"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ManagementSimpanan"
         CType(Me.data_grid_anggota, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.data_grid_simpanan, System.ComponentModel.ISupportInitialize).EndInit()

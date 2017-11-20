@@ -97,6 +97,7 @@ Partial Class Login
         Me.ClientSize = New System.Drawing.Size(424, 101)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Login"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

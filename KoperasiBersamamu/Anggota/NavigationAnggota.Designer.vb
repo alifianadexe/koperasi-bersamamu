@@ -215,6 +215,7 @@ Partial Class NavigationAnggota
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Name = "NavigationAnggota"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "NavigationAnggota"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

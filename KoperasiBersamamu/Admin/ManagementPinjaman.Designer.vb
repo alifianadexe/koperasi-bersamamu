@@ -104,6 +104,7 @@ Partial Class ManagementPinjaman
         Me.Controls.Add(Me.data_grid_pinjaman)
         Me.Controls.Add(Me.data_grid_anggota)
         Me.Name = "ManagementPinjaman"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ManagementPinjaman"
         CType(Me.data_grid_pinjaman, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.data_grid_anggota, System.ComponentModel.ISupportInitialize).EndInit()

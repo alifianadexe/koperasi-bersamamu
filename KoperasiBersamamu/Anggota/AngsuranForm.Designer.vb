@@ -64,9 +64,9 @@ Partial Class AngsuranForm
         Me.GroupBox3.Controls.Add(Me.Label5)
         Me.GroupBox3.Controls.Add(Me.Label4)
         Me.GroupBox3.Controls.Add(Me.Label2)
-        Me.GroupBox3.Location = New System.Drawing.Point(13, 82)
+        Me.GroupBox3.Location = New System.Drawing.Point(14, 78)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(377, 182)
+        Me.GroupBox3.Size = New System.Drawing.Size(412, 233)
         Me.GroupBox3.TabIndex = 11
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Pinjaman Anda"
@@ -74,120 +74,120 @@ Partial Class AngsuranForm
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(18, 98)
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(18, 125)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(84, 14)
+        Me.Label7.Size = New System.Drawing.Size(113, 20)
         Me.Label7.TabIndex = 11
         Me.Label7.Text = "Total Pinjaman"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(18, 145)
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(18, 184)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(79, 14)
+        Me.Label8.Size = New System.Drawing.Size(109, 20)
         Me.Label8.TabIndex = 10
         Me.Label8.Text = "Sisa Pinjaman"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(18, 122)
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(18, 92)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(83, 14)
+        Me.Label9.Size = New System.Drawing.Size(113, 20)
         Me.Label9.TabIndex = 9
         Me.Label9.Text = "Sisa Angsuran"
         '
         'lbl_pinjaman
         '
         Me.lbl_pinjaman.AutoSize = True
-        Me.lbl_pinjaman.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_pinjaman.Location = New System.Drawing.Point(159, 98)
+        Me.lbl_pinjaman.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_pinjaman.Location = New System.Drawing.Point(201, 125)
         Me.lbl_pinjaman.Name = "lbl_pinjaman"
-        Me.lbl_pinjaman.Size = New System.Drawing.Size(41, 12)
+        Me.lbl_pinjaman.Size = New System.Drawing.Size(61, 20)
         Me.lbl_pinjaman.TabIndex = 8
         Me.lbl_pinjaman.Text = "Bunga"
         '
         'lbl_sisa_pinjaman
         '
         Me.lbl_sisa_pinjaman.AutoSize = True
-        Me.lbl_sisa_pinjaman.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_sisa_pinjaman.Location = New System.Drawing.Point(159, 145)
+        Me.lbl_sisa_pinjaman.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_sisa_pinjaman.Location = New System.Drawing.Point(201, 184)
         Me.lbl_sisa_pinjaman.Name = "lbl_sisa_pinjaman"
-        Me.lbl_sisa_pinjaman.Size = New System.Drawing.Size(140, 12)
+        Me.lbl_sisa_pinjaman.Size = New System.Drawing.Size(193, 20)
         Me.lbl_sisa_pinjaman.TabIndex = 7
         Me.lbl_sisa_pinjaman.Text = "Jumlah Total Angsuran"
         '
         'lbl_sisa_angsuran
         '
         Me.lbl_sisa_angsuran.AutoSize = True
-        Me.lbl_sisa_angsuran.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_sisa_angsuran.Location = New System.Drawing.Point(159, 122)
+        Me.lbl_sisa_angsuran.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_sisa_angsuran.Location = New System.Drawing.Point(201, 92)
         Me.lbl_sisa_angsuran.Name = "lbl_sisa_angsuran"
-        Me.lbl_sisa_angsuran.Size = New System.Drawing.Size(72, 12)
+        Me.lbl_sisa_angsuran.Size = New System.Drawing.Size(100, 20)
         Me.lbl_sisa_angsuran.TabIndex = 6
         Me.lbl_sisa_angsuran.Text = "Kali Angsur"
         '
         'lbl_bunga
         '
         Me.lbl_bunga.AutoSize = True
-        Me.lbl_bunga.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_bunga.Location = New System.Drawing.Point(159, 27)
+        Me.lbl_bunga.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_bunga.Location = New System.Drawing.Point(201, 27)
         Me.lbl_bunga.Name = "lbl_bunga"
-        Me.lbl_bunga.Size = New System.Drawing.Size(41, 12)
+        Me.lbl_bunga.Size = New System.Drawing.Size(61, 20)
         Me.lbl_bunga.TabIndex = 5
         Me.lbl_bunga.Text = "Bunga"
         '
         'lbl_jumlah_total_angsuran
         '
         Me.lbl_jumlah_total_angsuran.AutoSize = True
-        Me.lbl_jumlah_total_angsuran.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_jumlah_total_angsuran.Location = New System.Drawing.Point(159, 74)
+        Me.lbl_jumlah_total_angsuran.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_jumlah_total_angsuran.Location = New System.Drawing.Point(201, 155)
         Me.lbl_jumlah_total_angsuran.Name = "lbl_jumlah_total_angsuran"
-        Me.lbl_jumlah_total_angsuran.Size = New System.Drawing.Size(140, 12)
+        Me.lbl_jumlah_total_angsuran.Size = New System.Drawing.Size(193, 20)
         Me.lbl_jumlah_total_angsuran.TabIndex = 4
         Me.lbl_jumlah_total_angsuran.Text = "Jumlah Total Angsuran"
         '
         'lbl_angsur
         '
         Me.lbl_angsur.AutoSize = True
-        Me.lbl_angsur.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_angsur.Location = New System.Drawing.Point(159, 51)
+        Me.lbl_angsur.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_angsur.Location = New System.Drawing.Point(201, 60)
         Me.lbl_angsur.Name = "lbl_angsur"
-        Me.lbl_angsur.Size = New System.Drawing.Size(72, 12)
+        Me.lbl_angsur.Size = New System.Drawing.Size(100, 20)
         Me.lbl_angsur.TabIndex = 3
         Me.lbl_angsur.Text = "Kali Angsur"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(18, 27)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(80, 14)
+        Me.Label5.Size = New System.Drawing.Size(114, 20)
         Me.Label5.TabIndex = 2
         Me.Label5.Text = "Bunga ( 0.5% )"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(18, 74)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(18, 155)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(126, 14)
+        Me.Label4.Size = New System.Drawing.Size(172, 20)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Jumlah Total Angsuran"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Lucida Sans", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(18, 51)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(18, 60)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(58, 14)
+        Me.Label2.Size = New System.Drawing.Size(78, 20)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Angsuran"
         '
@@ -196,7 +196,7 @@ Partial Class AngsuranForm
         Me.bayar_majemuk_grup.Controls.Add(Me.txt_max)
         Me.bayar_majemuk_grup.Controls.Add(Me.Label3)
         Me.bayar_majemuk_grup.Controls.Add(Me.txt_min)
-        Me.bayar_majemuk_grup.Location = New System.Drawing.Point(220, 293)
+        Me.bayar_majemuk_grup.Location = New System.Drawing.Point(227, 340)
         Me.bayar_majemuk_grup.Name = "bayar_majemuk_grup"
         Me.bayar_majemuk_grup.Size = New System.Drawing.Size(171, 51)
         Me.bayar_majemuk_grup.TabIndex = 13
@@ -230,7 +230,7 @@ Partial Class AngsuranForm
         '
         'btn_bayar
         '
-        Me.btn_bayar.Location = New System.Drawing.Point(127, 412)
+        Me.btn_bayar.Location = New System.Drawing.Point(132, 457)
         Me.btn_bayar.Name = "btn_bayar"
         Me.btn_bayar.Size = New System.Drawing.Size(144, 48)
         Me.btn_bayar.TabIndex = 14
@@ -240,7 +240,7 @@ Partial Class AngsuranForm
         'GroupBox2
         '
         Me.GroupBox2.Controls.Add(Me.lbl_bayar)
-        Me.GroupBox2.Location = New System.Drawing.Point(13, 350)
+        Me.GroupBox2.Location = New System.Drawing.Point(15, 395)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(378, 56)
         Me.GroupBox2.TabIndex = 15
@@ -265,7 +265,7 @@ Partial Class AngsuranForm
         Me.lbl_name.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.lbl_name.Location = New System.Drawing.Point(-7, 9)
         Me.lbl_name.Name = "lbl_name"
-        Me.lbl_name.Size = New System.Drawing.Size(416, 66)
+        Me.lbl_name.Size = New System.Drawing.Size(451, 66)
         Me.lbl_name.TabIndex = 16
         Me.lbl_name.Text = "Angsuran Form"
         Me.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -273,7 +273,7 @@ Partial Class AngsuranForm
         'rdo_button_2
         '
         Me.rdo_button_2.AutoSize = True
-        Me.rdo_button_2.Location = New System.Drawing.Point(257, 270)
+        Me.rdo_button_2.Location = New System.Drawing.Point(264, 317)
         Me.rdo_button_2.Name = "rdo_button_2"
         Me.rdo_button_2.Size = New System.Drawing.Size(98, 17)
         Me.rdo_button_2.TabIndex = 17
@@ -284,7 +284,7 @@ Partial Class AngsuranForm
         'rdo_button
         '
         Me.rdo_button.AutoSize = True
-        Me.rdo_button.Location = New System.Drawing.Point(56, 270)
+        Me.rdo_button.Location = New System.Drawing.Point(63, 317)
         Me.rdo_button.Name = "rdo_button"
         Me.rdo_button.Size = New System.Drawing.Size(96, 17)
         Me.rdo_button.TabIndex = 18
@@ -296,7 +296,7 @@ Partial Class AngsuranForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(402, 471)
+        Me.ClientSize = New System.Drawing.Size(438, 519)
         Me.Controls.Add(Me.rdo_button_2)
         Me.Controls.Add(Me.rdo_button)
         Me.Controls.Add(Me.lbl_name)
@@ -305,6 +305,7 @@ Partial Class AngsuranForm
         Me.Controls.Add(Me.bayar_majemuk_grup)
         Me.Controls.Add(Me.GroupBox3)
         Me.Name = "AngsuranForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "AngsuranForm"
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
