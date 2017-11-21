@@ -66,7 +66,7 @@ Partial Class DetailAngsuran
         Me.GroupBox3.Controls.Add(Me.Label5)
         Me.GroupBox3.Controls.Add(Me.Label4)
         Me.GroupBox3.Controls.Add(Me.Label2)
-        Me.GroupBox3.Location = New System.Drawing.Point(81, 15)
+        Me.GroupBox3.Location = New System.Drawing.Point(68, 15)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(412, 233)
         Me.GroupBox3.TabIndex = 12

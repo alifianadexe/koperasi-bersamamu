@@ -32,9 +32,9 @@
             adapter.Fill(dt)
 
             data_grid_simpanan.DataSource = dt
-            data_grid_simpanan.Columns(1).DefaultCellStyle.Format = "##,##0.00"
-            data_grid_simpanan.Columns(2).DefaultCellStyle.Format = "##,##0.00"
-            data_grid_simpanan.Columns(5).DefaultCellStyle.Format = "##,##0.00"
+            data_grid_simpanan.Columns(1).DefaultCellStyle.Format = "Rp ##,##0.00"
+            data_grid_simpanan.Columns(2).DefaultCellStyle.Format = "Rp ##,##0.00"
+            data_grid_simpanan.Columns(5).DefaultCellStyle.Format = "Rp ##,##0.00"
 
         End If
     End Sub

@@ -20,8 +20,8 @@
 
         data_gird.DataSource = dt
 
-        data_gird.Columns(1).DefaultCellStyle.Format = "##,##0.00"
-        data_gird.Columns(3).DefaultCellStyle.Format = "##,##0.00"
+        data_gird.Columns(1).DefaultCellStyle.Format = "Rp ##,##0.00"
+        data_gird.Columns(3).DefaultCellStyle.Format = "Rp ##,##0.00"
 
     End Sub
 

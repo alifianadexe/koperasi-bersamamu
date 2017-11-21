@@ -22,6 +22,7 @@ Partial Class AngsuranForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AngsuranForm))
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -45,6 +46,7 @@ Partial Class AngsuranForm
         Me.lbl_name = New System.Windows.Forms.Label()
         Me.rdo_button_2 = New System.Windows.Forms.RadioButton()
         Me.rdo_button = New System.Windows.Forms.RadioButton()
+        Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.GroupBox3.SuspendLayout()
         Me.bayar_majemuk_grup.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -292,6 +294,16 @@ Partial Class AngsuranForm
         Me.rdo_button.Text = "Bayar Bulan Ini"
         Me.rdo_button.UseVisualStyleBackColor = True
         '
+        'PrintPreviewDialog1
+        '
+        Me.PrintPreviewDialog1.AutoScrollMargin = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.AutoScrollMinSize = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.ClientSize = New System.Drawing.Size(400, 300)
+        Me.PrintPreviewDialog1.Enabled = True
+        Me.PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), System.Drawing.Icon)
+        Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        Me.PrintPreviewDialog1.Visible = False
+        '
         'AngsuranForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -341,4 +353,5 @@ Partial Class AngsuranForm
     Friend WithEvents lbl_name As Label
     Friend WithEvents rdo_button As RadioButton
     Friend WithEvents rdo_button_2 As RadioButton
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
 End Class

@@ -22,89 +22,104 @@ Partial Class Laporan
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.btn_anggota = New System.Windows.Forms.Button()
+        Me.btn_peminjaman = New System.Windows.Forms.Button()
+        Me.btn_bunga = New System.Windows.Forms.Button()
+        Me.btn_keuangan = New System.Windows.Forms.Button()
+        Me.btn_simpanan = New System.Windows.Forms.Button()
+        Me.btn_gaji = New System.Windows.Forms.Button()
+        Me.lbl_name = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Button1
+        'btn_anggota
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 145)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(185, 56)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btn_anggota.Location = New System.Drawing.Point(12, 113)
+        Me.btn_anggota.Name = "btn_anggota"
+        Me.btn_anggota.Size = New System.Drawing.Size(185, 56)
+        Me.btn_anggota.TabIndex = 0
+        Me.btn_anggota.Text = "Anggota"
+        Me.btn_anggota.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btn_peminjaman
         '
-        Me.Button2.Location = New System.Drawing.Point(12, 207)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(185, 56)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btn_peminjaman.Location = New System.Drawing.Point(12, 175)
+        Me.btn_peminjaman.Name = "btn_peminjaman"
+        Me.btn_peminjaman.Size = New System.Drawing.Size(185, 56)
+        Me.btn_peminjaman.TabIndex = 1
+        Me.btn_peminjaman.Text = "Peminjaman"
+        Me.btn_peminjaman.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btn_bunga
         '
-        Me.Button3.Location = New System.Drawing.Point(12, 269)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(185, 56)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btn_bunga.Location = New System.Drawing.Point(12, 237)
+        Me.btn_bunga.Name = "btn_bunga"
+        Me.btn_bunga.Size = New System.Drawing.Size(185, 56)
+        Me.btn_bunga.TabIndex = 2
+        Me.btn_bunga.Text = "Bunga"
+        Me.btn_bunga.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btn_keuangan
         '
-        Me.Button4.Location = New System.Drawing.Point(203, 145)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(188, 56)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btn_keuangan.Location = New System.Drawing.Point(203, 113)
+        Me.btn_keuangan.Name = "btn_keuangan"
+        Me.btn_keuangan.Size = New System.Drawing.Size(188, 56)
+        Me.btn_keuangan.TabIndex = 3
+        Me.btn_keuangan.Text = "Keuangan"
+        Me.btn_keuangan.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btn_simpanan
         '
-        Me.Button5.Location = New System.Drawing.Point(203, 207)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(185, 56)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "Button5"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btn_simpanan.Location = New System.Drawing.Point(203, 175)
+        Me.btn_simpanan.Name = "btn_simpanan"
+        Me.btn_simpanan.Size = New System.Drawing.Size(185, 56)
+        Me.btn_simpanan.TabIndex = 4
+        Me.btn_simpanan.Text = "Simpanan"
+        Me.btn_simpanan.UseVisualStyleBackColor = True
         '
-        'Button6
+        'btn_gaji
         '
-        Me.Button6.Location = New System.Drawing.Point(203, 269)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(185, 56)
-        Me.Button6.TabIndex = 5
-        Me.Button6.Text = "Button6"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.btn_gaji.Location = New System.Drawing.Point(203, 237)
+        Me.btn_gaji.Name = "btn_gaji"
+        Me.btn_gaji.Size = New System.Drawing.Size(185, 56)
+        Me.btn_gaji.TabIndex = 5
+        Me.btn_gaji.Text = "Gaji"
+        Me.btn_gaji.UseVisualStyleBackColor = True
+        '
+        'lbl_name
+        '
+        Me.lbl_name.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lbl_name.Font = New System.Drawing.Font("Garamond", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_name.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lbl_name.Location = New System.Drawing.Point(-4, 9)
+        Me.lbl_name.Name = "lbl_name"
+        Me.lbl_name.Size = New System.Drawing.Size(414, 66)
+        Me.lbl_name.TabIndex = 6
+        Me.lbl_name.Text = "Laporan"
+        Me.lbl_name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Laporan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(403, 352)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(403, 305)
+        Me.Controls.Add(Me.lbl_name)
+        Me.Controls.Add(Me.btn_gaji)
+        Me.Controls.Add(Me.btn_simpanan)
+        Me.Controls.Add(Me.btn_keuangan)
+        Me.Controls.Add(Me.btn_bunga)
+        Me.Controls.Add(Me.btn_peminjaman)
+        Me.Controls.Add(Me.btn_anggota)
         Me.Name = "Laporan"
         Me.Text = "Laporan"
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
+    Friend WithEvents btn_anggota As Button
+    Friend WithEvents btn_peminjaman As Button
+    Friend WithEvents btn_bunga As Button
+    Friend WithEvents btn_keuangan As Button
+    Friend WithEvents btn_simpanan As Button
+    Friend WithEvents btn_gaji As Button
+    Friend WithEvents lbl_name As Label
 End Class

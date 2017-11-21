@@ -40,4 +40,8 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         ManagementPinjaman.Show()
     End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Laporan.Show()
+    End Sub
 End Class

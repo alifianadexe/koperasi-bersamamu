@@ -22,6 +22,7 @@ Partial Class AmbilForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AmbilForm))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lbl_jumlah = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -29,6 +30,7 @@ Partial Class AmbilForm
         Me.Button1 = New System.Windows.Forms.Button()
         Me.lbl_simpanan = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -99,6 +101,16 @@ Partial Class AmbilForm
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "ID Simpanan"
         '
+        'PrintPreviewDialog1
+        '
+        Me.PrintPreviewDialog1.AutoScrollMargin = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.AutoScrollMinSize = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.ClientSize = New System.Drawing.Size(400, 300)
+        Me.PrintPreviewDialog1.Enabled = True
+        Me.PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), System.Drawing.Icon)
+        Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        Me.PrintPreviewDialog1.Visible = False
+        '
         'AmbilForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -124,4 +136,5 @@ Partial Class AmbilForm
     Friend WithEvents Button1 As Button
     Friend WithEvents lbl_simpanan As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
 End Class

@@ -28,11 +28,11 @@
             adapter.Fill(dt)
 
             data_grid_pinjaman.DataSource = dt
-            data_grid_pinjaman.Columns(1).DefaultCellStyle.Format = "##,##0.00"
-            data_grid_pinjaman.Columns(3).DefaultCellStyle.Format = "##,##0.00"
-            data_grid_pinjaman.Columns(4).DefaultCellStyle.Format = "##,##0.00"
-            data_grid_pinjaman.Columns(5).DefaultCellStyle.Format = "##,##0.00"
-            data_grid_pinjaman.Columns(6).DefaultCellStyle.Format = "##,##0.00"
+            data_grid_pinjaman.Columns(1).DefaultCellStyle.Format = "Rp ##,##0.00"
+            data_grid_pinjaman.Columns(3).DefaultCellStyle.Format = "Rp ##,##0.00"
+            data_grid_pinjaman.Columns(4).DefaultCellStyle.Format = "Rp ##,##0.00"
+            data_grid_pinjaman.Columns(5).DefaultCellStyle.Format = "Rp ##,##0.00"
+            data_grid_pinjaman.Columns(6).DefaultCellStyle.Format = "Rp ##,##0.00"
 
         End If
     End Sub

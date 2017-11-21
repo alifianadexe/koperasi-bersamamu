@@ -19,9 +19,9 @@
         adapter.Fill(dt)
 
         data_grid.DataSource = dt
-        data_grid.Columns(1).DefaultCellStyle.Format = "##,##0.00"
-        data_grid.Columns(2).DefaultCellStyle.Format = "##,##0.00"
-        data_grid.Columns(5).DefaultCellStyle.Format = "##,##0.00"
+        data_grid.Columns(1).DefaultCellStyle.Format = "Rp ##,##0.00"
+        data_grid.Columns(2).DefaultCellStyle.Format = "Rp ##,##0.00"
+        data_grid.Columns(5).DefaultCellStyle.Format = "Rp ##,##0.00"
 
         If (data_grid.Rows.Count - 1) >= 0 Then
             Me.lbl_saldo.Text = "Rp." + Format(Val(data_grid.Rows(data_grid.Rows.Count - 1).Cells(5).Value.ToString), "##,##0.00")
